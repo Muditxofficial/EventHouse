@@ -6,12 +6,16 @@ import EventForm from "../features/events/eventForm/EventForm";
 import HomePage from "../features/home/HomePage";
 import NavBar from "../features/nav/NavBar";
 import ModalManager from "./common/modals/ModalManager";
+import { ToastContainer } from "react-toastify";
+
+import ErrorComponent from "./common/errors/ErrorComponent";
 
 function App() {
   const { key } = useLocation();
   return (
     <>
-      <ModalManager />
+      <ModalManager position="bottom-right" hideProgressBar />
+      <ToastContainer />
       <Route exact path="/" component={HomePage} />
       <Route
         path={"/(.+)"}
@@ -26,11 +30,13 @@ function App() {
                 path={["/createEvent", "/manage/:id"]}
                 component={EventForm}
               />
+              <Route path="/error" component={ErrorComponent} />
             </Container>
           </>
         )}
       />
     </>
+    // <MapComp />
   );
 }
 

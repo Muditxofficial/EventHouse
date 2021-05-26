@@ -3,14 +3,20 @@ import ReactDOM from "react-dom";
 
 import App from "./app/App";
 import "semantic-ui-css/semantic.min.css";
+import "react-toastify/dist/ReactToastify.min.css";
 import "./app/App.css";
 import { BrowserRouter } from "react-router-dom";
 import { Provider } from "react-redux";
-import { createStore } from "redux";
+import { createStore, applyMiddleware } from "redux";
 import rootReducer from "./app/store/rootReducer";
-import { devToolsEnhancer } from "redux-devtools-extension";
+import { composeWithDevTools } from "redux-devtools-extension";
 import ScrollToTop from "./app/layout/ScrollToTop";
-const store = createStore(rootReducer, devToolsEnhancer());
+import thunk from "redux-thunk";
+
+const store = createStore(
+  rootReducer,
+  composeWithDevTools(applyMiddleware(thunk))
+);
 
 ReactDOM.render(
   <Provider store={store}>

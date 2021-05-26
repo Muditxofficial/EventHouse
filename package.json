@@ -8,21 +8,28 @@
     "@testing-library/user-event": "^12.1.10",
     "cuid": "^2.1.8",
     "date-fns": "2.21.3",
+    "firebase": "^8.6.2",
     "formik": "^2.2.7",
+    "leaflet": "^1.7.1",
     "react": "^17.0.2",
+    "react-calendar": "^3.4.0",
     "react-datepicker": "^3.8.0",
     "react-dom": "^17.0.2",
+    "react-leaflet": "^3.2.0",
     "react-redux": "^7.2.4",
     "react-router-dom": "^5.2.0",
     "react-scripts": "4.0.3",
+    "react-toastify": "^7.0.4",
     "redux": "^4.1.0",
+    "redux-thunk": "^2.3.0",
     "semantic-ui-css": "^2.4.1",
     "semantic-ui-react": "^2.0.3",
     "web-vitals": "^1.0.1",
     "yup": "^0.32.9"
   },
   "scripts": {
-    "start": "react-scripts start",
+    "dev": "env-cmd -f /home/mudit/Documents/proj/src/.env react-scripts start",
+    "start": "yarn dev",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
@@ -33,19 +40,13 @@
       "react-app/jest"
     ]
   },
-  "browserslist": {
-    "production": [
-      ">0.2%",
-      "not dead",
-      "not op_mini all"
-    ],
-    "development": [
-      "last 1 chrome version",
-      "last 1 firefox version",
-      "last 1 safari version"
-    ]
-  },
+  "browserslist": [
+    ">0.2%",
+    "not dead",
+    "not op_mini all"
+  ],
   "devDependencies": {
+    "env-cmd": "^10.1.0",
     "redux-devtools-extension": "^2.13.9"
   }
 }
