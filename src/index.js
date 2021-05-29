@@ -7,16 +7,11 @@ import "react-toastify/dist/ReactToastify.min.css";
 import "./app/App.css";
 import { BrowserRouter } from "react-router-dom";
 import { Provider } from "react-redux";
-import { createStore, applyMiddleware } from "redux";
-import rootReducer from "./app/store/rootReducer";
-import { composeWithDevTools } from "redux-devtools-extension";
-import ScrollToTop from "./app/layout/ScrollToTop";
-import thunk from "redux-thunk";
 
-const store = createStore(
-  rootReducer,
-  composeWithDevTools(applyMiddleware(thunk))
-);
+import ScrollToTop from "./app/layout/ScrollToTop";
+import { configureStore } from "./app/store/configureStore";
+
+const store = configureStore();
 
 ReactDOM.render(
   <Provider store={store}>
