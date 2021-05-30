@@ -28,7 +28,7 @@
     "yup": "^0.32.9"
   },
   "scripts": {
-    "dev": "env-cmd -f /home/mudit/Documents/proj/src/.env react-scripts start",
+    "dev": "env-cmd -f ./.env react-scripts start",
     "start": "yarn dev",
     "build": "react-scripts build",
     "test": "react-scripts test",
