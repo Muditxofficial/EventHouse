@@ -6,7 +6,7 @@ export default function EventFilters({ loading, predicate, setPredicate }) {
   return (
     <>
       <Menu vertical size="large" style={{ width: "100%" }}>
-        <Header icon="filter" attached color="teal" content="Filters" />
+        <Header icon="filter" attached color="yellow" content="Filters" />
         <Menu.Item
           content="All Events"
           active={predicate.get("filter") === "all"}
@@ -26,7 +26,7 @@ export default function EventFilters({ loading, predicate, setPredicate }) {
           content="I'm hosting"
         />
       </Menu>
-      <Header icon="calendar" attached color="teal" content="Select date" />
+      <Header icon="calendar" attached color="yellow" content="Select date" />
       <Calendar
         onChange={(date) => setPredicate("startDate", date)}
         value={predicate.get("startDate") || new Date()}
