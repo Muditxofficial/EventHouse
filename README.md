@@ -1,9 +1,9 @@
-#DEMO
-
-
-
-https://user-images.githubusercontent.com/63860014/132866476-53a22c29-3f6d-4d2d-b447-a2979d7fac6a.mp4
-
+#SCREENSHOTS
+![1](https://user-images.githubusercontent.com/63860014/132867451-ca224d9e-46ce-4bff-a835-25fa8cbf0f7a.png)
+![2](https://user-images.githubusercontent.com/63860014/132867422-f37c86f6-673b-4d2b-a02a-5cda61c034c1.png)
+![3](https://user-images.githubusercontent.com/63860014/132867471-09c44340-9a04-4452-a5fb-57531895b7f9.png)
+![4](https://user-images.githubusercontent.com/63860014/132867510-b9e63fb0-3d2a-4f9b-8f5f-c31c552d423d.png)
+![5](https://user-images.githubusercontent.com/63860014/132867528-5caca6a0-8ef9-4d2c-9f26-122338554b0d.png)
 
 
 
